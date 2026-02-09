@@ -42,9 +42,12 @@ A modern, responsive personal portfolio website showcasing my experience, projec
    - `index.html`
    - `styles.css`
    - `script.js`
+   - `Kiruthika_Marikumaran_Resume.pdf` (your resume PDF - **IMPORTANT!**)
    - `README.md` (this file)
 3. Add a commit message like "Initial commit: Add portfolio website"
 4. Click **"Commit changes"**
+
+**IMPORTANT:** Make sure to upload your resume PDF file named exactly `Kiruthika_Marikumaran_Resume.pdf` so the download links work correctly!
 
 #### Option B: Using Git Command Line
 
@@ -170,10 +173,11 @@ To test your website locally before publishing:
 ```
 kirustar14.github.io/
 │
-├── index.html          # Main HTML file
-├── styles.css          # CSS styles
-├── script.js           # JavaScript functionality
-└── README.md           # This file
+├── index.html                          # Main HTML file
+├── styles.css                          # CSS styles
+├── script.js                           # JavaScript functionality
+├── Kiruthika_Marikumaran_Resume.pdf    # Your resume (upload this!)
+└── README.md                           # This file
 ```
 
 ## 🎯 Future Enhancements

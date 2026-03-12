@@ -1,0 +1,62 @@
+Sentiment Analysis: DAN, BPE, and Skip-Gram
+
+This project implements various neural architectures for sentiment classification on movie reviews, including Deep Averaging Networks (DAN) and Byte Pair Encoding (BPE) for subword tokenization. It also includes a conceptual analysis of the Skip-Gram word embedding model.
+
+Prerequisites
+Python 3.6+
+
+PyTorch
+
+scikit-learn
+
+tqdm
+
+matplotlib (for plotting BOW results)
+
+To install dependencies:
+
+Bash
+pip install torch sklearn tqdm matplotlib
+Running the Models
+You can run the different experiments using the --model flag in main.py. All models are configured to print training progress and development set accuracy.
+
+1. Bag of Words (Baseline)
+To run the simple discrete Bag-of-Words models (2-layer and 3-layer NN):
+
+python main.py --model BOW
+
+2. Deep Averaging Network (DAN) - GloVe Initialized
+Runs the DAN model using pre-trained 50d GloVe embeddings.
+
+python main.py --model DAN
+
+3. DAN with Random Initialization
+Runs the DAN model where word embeddings are initialized randomly and trained from scratch (Part 1b).
+
+python main.py --model DAN_RANDOM
+
+4. Subword DAN (BPE)
+Runs the DAN model using Byte Pair Encoding for subword tokenization. This model trains its own subword embeddings from scratch (Part 2).
+
+python main.py --model SUBWORDDAN
+
+
+Project Structure: 
+
+main.py: The entry point for all experiments. Handles data loading and the training loop.
+
+DANmodels.py: Contains the PyTorch implementations for DAN (GloVe), DANRandom, and the SentimentDatasetDAN.
+
+bpe.py: Contains the BPE merge logic, BPETokenizer, and the DAN_BPE model architecture.
+
+BOWmodels.py: Contains baseline Bag-of-Words neural models.
+
+sentiment_data.py & utils.py: Utility scripts for data reading and indexing.
+
+Summary of Results (Report Highlights)
+
+DAN (GloVe): Achieved 79.8% peak dev accuracy. Pre-trained vectors allow for extremely fast convergence (within 10 epochs).
+
+DAN (Random): Achieved 78.8% peak dev accuracy. While competitive, it requires more epochs to converge and shows higher volatility.
+
+Subword DAN (4000 merges): Achieved 77.4% peak dev accuracy. It manages a significant reduction in vocabulary size while maintaining performance above the project requirements.

@@ -1,0 +1,9 @@
+.head {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.head :global(.eyebrow) {
+  justify-content: center;
+}

@@ -1,0 +1,34 @@
+.jobRow {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  border-radius: var(--radius-pill);
+  background: var(--color-bg-deep);
+  box-shadow: var(--shadow-soft);
+  max-width: fit-content;
+}
+
+.jobText {
+  font-size: 1rem;
+  color: var(--color-text-soft);
+  line-height: 1.55;
+}
+
+.jobText strong {
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.jobDates {
+  color: var(--color-text-faint);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 640px) {
+  .jobRow {
+    max-width: 100%;
+    border-radius: var(--radius-lg);
+  }
+}

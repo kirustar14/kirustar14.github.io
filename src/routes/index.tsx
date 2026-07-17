@@ -70,7 +70,7 @@ const projects = [
 const timeline = [
   { title: "Where it started", body: "Grew up building — LEGO, Rubik's Cube, anything with moving parts." },
   { title: "Curiosity never stops", body: "Never really stopped building, tinkering, and asking why something works." },
-  { title: "B.S. Computer Engineering, in 2 years", body: "Sep 2023 – Jun 2025, UC San Diego, 3.85 GPA" },
+  { title: "B.S. Computer Engineering, in 2 years", body: "Sep 2023 – Jun 2025, UC San Diego" },
   { title: "M.S. Electrical & Computer Engineering", body: "Medical Devices & Systems track, UC San Diego, Sep 2025 – Dec 2026 (expected graduation)" },
   {
     title: "Inaugural Poseidon Fellow",
@@ -120,7 +120,7 @@ const projectColors = [
   "tile-blush", "tile-lime", "tile-coral", "tile-mint", "tile-sky",
 ];
 const timelineColors = ["tile-peach", "tile-mint", "tile-lav", "tile-sky", "tile-butter", "tile-blush"];
-const expColors = ["tile-coral", "tile-mint", "tile-lav", "tile-butter"];
+const expColors = ["tile-lime", "tile-butter", "tile-coral", "tile-mint"];
 const awardColors = ["tile-butter", "tile-peach", "tile-lav", "tile-mint"];
 
 function NavPill() {
@@ -133,12 +133,12 @@ function NavPill() {
   ];
   return (
     <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50">
-      <ul className="flex items-center gap-1 rounded-full border-[1.5px] border-black bg-white px-2 py-1.5 shadow-[3px_3px_0_0_#111]">
+      <ul className="flex items-center gap-1.5 rounded-full border-[1.5px] border-black bg-white px-3 py-2 shadow-[4px_4px_0_0_#111]">
         {items.map(([id, label]) => (
           <li key={id}>
             <a
               href={`#${id}`}
-              className="block rounded-full px-3 py-1.5 text-[13px] font-bold hover:bg-black hover:text-white transition-colors"
+              className="block rounded-full px-4 py-2 text-[19px] font-bold hover:bg-black hover:text-white transition-colors"
             >
               {label}
             </a>
@@ -154,7 +154,7 @@ function SectionLabel({ n, kicker, children }: { n: string; kicker?: string; chi
     <div className="mb-8">
       <div className="flex items-center gap-3 flex-wrap">
         <span className="chip">{n}</span>
-        {kicker && <span className="handwritten text-2xl text-black/70">— {kicker}</span>}
+        {kicker && <span className="handwritten text-4xl text-black/70">— {kicker}</span>}
       </div>
       <h2 style={{ fontFamily: "Fraunces, serif" }} className="mt-3 text-4xl md:text-6xl tracking-tight font-bold leading-[1]">
         {children}
@@ -172,7 +172,7 @@ function Index() {
         className="pointer-events-none fixed inset-0 -z-10 opacity-60"
         style={{
           backgroundImage:
-            "radial-gradient(#ffd8e4 1.5px, transparent 1.5px), radial-gradient(#d6ecff 1.5px, transparent 1.5px)",
+            "radial-gradient(#cfe0ee 1.5px, transparent 1.5px), radial-gradient(#cfe8de 1.5px, transparent 1.5px)",
           backgroundSize: "44px 44px, 44px 44px",
           backgroundPosition: "0 0, 22px 22px",
         }}
@@ -182,12 +182,19 @@ function Index() {
 
       {/* HERO / STORY */}
       <section id="story" className="max-w-6xl mx-auto px-5 pt-28 pb-16">
-        <div className="tile tile-hover tile-butter p-8 md:p-14 relative">
+        <div className="tile tile-hover tile-sky p-8 md:p-14 md:pr-[19rem] lg:pr-[24rem] xl:pr-[28rem] relative">
           <span
-            className="handwritten absolute -top-4 left-8 bg-white border-[1.5px] border-black rounded-full px-3 py-0.5 text-xl shadow-[2px_2px_0_0_#111] -rotate-3"
+            className="handwritten absolute -top-4 left-8 bg-white border-[1.5px] border-black rounded-full px-3 py-0.5 text-3xl shadow-[3px_3px_0_0_#111] -rotate-3"
           >
             hi, i'm →
           </span>
+          <div className="hidden md:block absolute top-14 right-10 lg:right-14 md:w-64 lg:w-80 xl:w-96 md:h-64 lg:h-80 xl:h-96 rounded-[1.75rem] overflow-hidden border-[1.5px] border-black shadow-[4px_4px_0_0_#111] rotate-2 bg-white">
+            <img
+              src="/headshot.jpeg"
+              alt="Kiruthika Marikumaran"
+              className="w-full h-full object-cover"
+            />
+          </div>
           <h1
             style={{ fontFamily: "Fraunces, serif" }}
             className="text-6xl md:text-8xl leading-[0.95] tracking-tight font-bold mt-4"
@@ -219,13 +226,13 @@ function Index() {
         <div className="mt-10">
           <div className="flex items-baseline gap-3 mb-6">
             <span className="chip">01 · Story</span>
-            <span className="handwritten text-2xl text-black/70">— the long version</span>
+            <span className="handwritten text-4xl text-black/70">— the long version</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {timeline.map((t, i) => (
               <div key={i} className={`tile tile-hover ${timelineColors[i % timelineColors.length]} p-6 md:p-7`}>
                 <div className="flex items-baseline gap-3">
-                  <span className="handwritten text-4xl text-black/70">0{i + 1}</span>
+                  <span className="handwritten text-6xl text-black/70">0{i + 1}</span>
                   <h3 style={{ fontFamily: "Fraunces, serif" }} className="text-xl md:text-2xl font-bold tracking-tight">
                     {t.title}
                   </h3>
@@ -261,7 +268,7 @@ function Index() {
             >
               <div className="flex items-start justify-between gap-4">
                 <div className="flex items-baseline gap-3">
-                  <span className="handwritten text-3xl text-black/70">
+                  <span className="handwritten text-5xl text-black/70">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3 style={{ fontFamily: "Fraunces, serif" }} className="text-2xl md:text-3xl font-bold tracking-tight">
@@ -333,7 +340,7 @@ function Index() {
               className={`tile tile-hover ${awardColors[i % awardColors.length]} p-5 md:p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3`}
             >
               <div className="flex items-baseline gap-4">
-                <span className="handwritten text-4xl text-black/70">
+                <span className="handwritten text-6xl text-black/70">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div>
@@ -399,7 +406,7 @@ function Index() {
           <div style={{ fontFamily: "Fraunces, serif" }} className="text-2xl font-bold tracking-tight">
             Kiruthika Marikumaran
           </div>
-          <div className="handwritten text-xl">© 2026 · made with curiosity ✿</div>
+          <div className="handwritten text-3xl">© 2026 · made with curiosity ✿</div>
         </div>
       </footer>
     </div>

@@ -102,11 +102,6 @@ const experience = [
     link: "https://ynot-website.vercel.app/",
   },
   {
-    role: "Problem Design Engineer",
-    org: "Widget Factory",
-    body: "Mar 2026 – present. Design and evaluate challenging coding puzzles that test deep software engineering fundamentals; assess problem quality, clarity, and solvability across languages and technical domains.",
-  },
-  {
     role: "Founder",
     org: "BLEprint",
     body: "Mar 2025 – Jun 2026. Founded a construction tech startup using embedded computer vision to detect jobsite hazards, plus an AR documentation app that shows what's behind a wall before you drill. Selected for Blackstone LaunchPad at UCSD.",

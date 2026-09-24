@@ -6,62 +6,68 @@ export const Route = createFileRoute("/")({
 
 const projects = [
   {
-    name: "DracoCare",
-    desc: "Your personal dragon-powered health clinic: an AI health assistant with three dragon characters guiding patients from symptoms to a booked appointment, plus a prescription price finder.",
-    tags: ["Healthcare AI", "Agents", "LLM"],
-    github: "https://github.com/Mallika1405/DracoCare",
+    name: "VeggieDelhi",
+    desc: "Scores 10 real Delhi street zones on live air, satellite, and street data, shortlists species that physically fit each site, then predicts cross-compatibility from published divergence times. Built at HackMIT 2026.",
+    tags: ["Python", "FastAPI", "React", "Earth Engine", "Genomics"],
+    github: "https://github.com/kirustar14/Plant",
   },
   {
-    name: "Sidebar",
-    desc: "Real-time AI co-counsel for the courtroom, worn as Meta Ray-Ban glasses: listens to live testimony, fact-checks claims in real time, analyzes witness stress signals, and whispers actionable intelligence to the lawyer hands-free. Built in one day, Top 7 at the YC Voice Agents Hackathon.",
-    tags: ["Voice AI", "Wearables", "Real-time"],
-    github: "https://github.com/J4Joshua/CourtLine",
+    name: "OnCall",
+    desc: "Always-on ER voice agent that turns EMS handoffs and physician orders into FHIR records in real time. A Claude reasoning agent decides when to speak up, like an allergy conflict, in one short sentence.",
+    tags: ["Claude", "Deepgram", "FHIR", "FastAPI", "React"],
+    github: "https://github.com/kirustar14/OnCall",
   },
   {
     name: "Watson & Crick",
-    desc: "An AI-powered environmental health research engine where two AI scientists argue over your data in real time and hand back a peer-review-grade report in ~30 seconds. 1st Place, ML & AI Tooling, DataHacks 2026.",
+    desc: "Ask an environmental health question and two AI scientists argue over real EPA, NOAA, CDC, and GWAS data, run the stats, and hand back a causal graph and research report. 1st place, DataHacks 2026.",
     tags: ["Multi-Agent", "Research AI", "Environmental Health"],
     github: "https://github.com/kirustar14/WatsonCrick",
   },
   {
-    name: "Trading Bot",
-    desc: "A momentum-based XGBoost trading bot predicting late-afternoon stock direction, 70.1% direction accuracy on Costco (COST).",
-    tags: ["XGBoost", "Quant", "Python"],
-    github: "https://github.com/kirustar14/TradingBot",
+    name: "DracoCare",
+    desc: "A dragon-staffed AI clinic that takes you from symptoms to a Gemini-generated health report to a booked appointment, with a voice agent that calls the clinic for you. Best Use of Gemini, DiamondHacks.",
+    tags: ["Healthcare AI", "Agents", "LLM"],
+    github: "https://github.com/Mallika1405/DracoCare",
   },
   {
     name: "Neuro-LENS",
-    desc: "A polygenic risk score analysis backend: parses patient VCF files, harmonizes alleles against GWAS data, and calculates factor-based genetic risk scores.",
+    desc: "Genomic risk backend that parses patient VCF files, harmonizes alleles against GWAS summary stats with strand flipping, and computes polygenic risk scores across disorders plus five cross-disorder factor scores.",
     tags: ["Genomics", "Bioinformatics", "Python"],
     github: "https://github.com/kirustar14/nuero-lens",
   },
   {
-    name: "Glitch",
-    desc: "An adaptive learning platform that rewires any PDF around how YOUR brain works — same source material, completely different curriculum depending on the learner. Built in 24 hours at a YC GStack × GBrain Hackathon.",
-    tags: ["EdTech", "LLM", "Personalization"],
-    github: "https://github.com/kirustar14/glitch",
-  },
-  {
     name: "Chameleon Tutor Studio",
-    desc: "Turns PDF study notes into full AI-generated songs, lyrics, vocals, and mixed audio, all in one workflow.",
+    desc: "Turns PDF study notes into actual songs. LLaMA 3.3 writes the lyrics, Demucs strips instrumentals from YouTube tracks, and edge-tts plus Pedalboard handle vocals and the final mix.",
     tags: ["Generative Audio", "EdTech", "LLM"],
     github: "https://github.com/kirustar14/notes2song",
   },
   {
-    name: "BLEprint",
-    desc: "Construction hazard detection and AR documentation platform; embedded CV prototype (ESP32 + YOLOv8) that grew into a full cloud-synced web app after 50+ user interviews. Selected for the Blackstone LaunchPad program at UCSD Basement.",
-    tags: ["Computer Vision", "IoT", "AR"],
-    github: "https://github.com/kirustar14/BLEprint-mvp",
+    name: "Glitch",
+    desc: "Adaptive learning platform that rebuilds any PDF around how you learn and what you love. GBrain remembers every checkpoint you missed and rebuilds your next lesson around those exact gaps.",
+    tags: ["EdTech", "LLM", "Personalization"],
+    github: "https://github.com/kirustar14/glitch",
+  },
+  {
+    name: "Sidebar",
+    desc: "Courtroom co-counsel worn as Meta Ray-Ban glasses. NVIDIA Nemotron ASR and a 120B LLM fact-check live testimony as it happens. Top 7 at the YC Voice Agents Hackathon 2026.",
+    tags: ["Voice AI", "Wearables", "Real-time"],
+    github: "https://github.com/J4Joshua/CourtLine",
+  },
+  {
+    name: "Trading Bot",
+    desc: "XGBoost momentum model predicting minute-level COST price direction during late afternoon trading, built on leakage-safe features. Hit 70.1% direction accuracy over a 5-day backtest.",
+    tags: ["XGBoost", "Quant", "Python"],
+    github: "https://github.com/kirustar14/TradingBot",
   },
   {
     name: "Schema Linking via LoRA Fine-Tuning",
-    desc: "Identified a right-truncation bug zeroing out 34/101 predictions; an inference-only fix (left-truncation + raised context) lifted the score from 0.2967 to 0.5409 with identical weights — 85% of the total gain, zero retraining. Widened retrieval to 300 columns / 3072-token context, raising the recall ceiling from 0.816 to 0.930; final leaderboard score 0.6419 (table: 0.718, column: 0.565) across 20+ ablation configs.",
+    desc: "LoRA fine-tune that teaches an LLM to pick the right tables and columns for text-to-SQL queries. More than doubled the leaderboard score, from 0.2967 to 0.6419.",
     tags: ["PyTorch", "Hugging Face", "Qwen2.5-1.5B", "LoRA"],
     github: null,
   },
   {
     name: "RapidFire AI RAG Pipeline",
-    desc: "Hybrid BM25 + FAISS retrieval with cross-encoder reranking; swapping in BAAI/bge-reranker-large delivered the largest single gain (+0.10 Retrieval Score, 0.5907 to 0.6984). 768-character chunks outperformed 256-character chunks by 20% on retrieval and 41% on generation. Final Retrieval Score 0.698 (F1@5: 0.638, R@5: 0.939) across 32 grid runs.",
+    desc: "Hybrid retrieval pipeline for RapidFire AI that pairs BM25 keyword search with FAISS dense vectors to catch what each misses alone. Lifted retrieval score from 0.59 to 0.70.",
     tags: ["LangChain", "FAISS", "BM25", "BGE", "HuggingFace"],
     github: null,
   },
@@ -92,23 +98,28 @@ const experience = [
   {
     role: "Co-President & Founder",
     org: "YNot",
-    body: "A student org built to remove every fear standing between people and entrepreneurship — built on the TRY philosophy (Traditional founders are a myth / Refuse to let fear stop you / Yesterday's failure is tomorrow's foundation).",
+    body: "Co-founded UCSD's student entrepreneurship org after a startup panel where every founder told the same recycled story. Running a weekly fall lineup from Cofounder Speed Dating to Investor for a Night, partnered with Transpose, and on Tech Week's official lineup.",
     link: "https://ynot-website.vercel.app/",
-  },
-  {
-    role: "VP of Operations",
-    org: "RAIN",
-    body: "Real World AI Network at UCSD — the operating layer for real-world AI on campus, unifying 7,000+ students, 17+ labs and builder clubs, and 38+ aligned faculty across student orgs, faculty, industry, and entrepreneurship.",
-    link: "https://rain.ucsd.edu/",
   },
   {
     role: "Problem Design Engineer",
     org: "Widget Factory",
     body: "Mar 2026 – present. Design and evaluate challenging coding puzzles that test deep software engineering fundamentals; assess problem quality, clarity, and solvability across languages and technical domains.",
   },
+  {
+    role: "Founder",
+    org: "BLEprint",
+    body: "Mar 2025 – Jun 2026. Founded a construction tech startup using embedded computer vision to detect jobsite hazards, plus an AR documentation app that shows what's behind a wall before you drill. Selected for Blackstone LaunchPad at UCSD.",
+    link: "https://github.com/kirustar14/BLEprint-mvp",
+  },
 ];
 
 const awards = [
+  {
+    title: "Cipher poster accepted, sole author",
+    where: "WiML Workshop @ NeurIPS 2026",
+    when: null,
+  },
   { title: "1st Place, Small Molecule Track", where: "AIxBio Hackathon, UCSD", when: "May 2026" },
   { title: "1st Place, ML & AI Tooling", where: "DataHacks 2026, UCSD", when: "Apr 2026" },
   { title: "Top 7", where: "YC Voice Agents Hackathon", when: "May 2026" },
@@ -213,6 +224,10 @@ function Index() {
               — J.R.R. Tolkien, <em>The Lord of the Rings</em>
             </span>
           </blockquote>
+
+          <p className="handwritten text-3xl md:text-4xl mt-6 text-[#c44569]">
+            new ✦ Cipher poster accepted to the WiML Workshop @ NeurIPS 2026
+          </p>
 
           <div className="mt-8 flex flex-wrap gap-2">
             <a href="mailto:kiruthika.star14@gmail.com" className="chip hover:bg-black hover:text-white transition">✉ Email</a>

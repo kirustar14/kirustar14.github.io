@@ -93,7 +93,7 @@ const experience = [
   {
     role: "Founder & CEO",
     org: "Cipher",
-    body: "Genomic drug target discovery pipeline: identifies natural disease resistors in population biobanks and extracts their protective mechanisms as drug targets — computationally doing what leading competitors do through manual field expeditions. Independently rediscovered PCSK9 (monoclonal antibody inhibition) and APOB (ASO knockdown) as high-confidence drug targets using only public genomic APIs.",
+    body: "June 2026 - present. Genomic drug target discovery pipeline: identifies natural disease resistors in population biobanks and extracts their protective mechanisms as drug targets — computationally doing what leading competitors do through manual field expeditions. Independently rediscovered PCSK9 (monoclonal antibody inhibition) and APOB (ASO knockdown) as high-confidence drug targets using only public genomic APIs.",
   },
   {
     role: "Co-President & Founder",

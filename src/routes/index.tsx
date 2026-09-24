@@ -116,7 +116,7 @@ const experience = [
 
 const awards = [
   {
-    title: "Cipher poster accepted, sole author",
+    title: "Poster, Solo Author (Cipher)",
     where: "WiML Workshop @ NeurIPS 2026",
     when: null,
   },

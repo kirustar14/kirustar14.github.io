@@ -118,7 +118,7 @@ const awards = [
   {
     title: "Poster, Solo Author (Cipher)",
     where: "WiML Workshop @ NeurIPS 2026",
-    when: null,
+    when: "Sep 2026",
   },
   { title: "1st Place, Small Molecule Track", where: "AIxBio Hackathon, UCSD", when: "May 2026" },
   { title: "1st Place, ML & AI Tooling", where: "DataHacks 2026, UCSD", when: "Apr 2026" },

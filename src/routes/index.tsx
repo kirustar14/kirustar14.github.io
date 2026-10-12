@@ -123,7 +123,7 @@ const awards = [
   { title: "1st, Small Molecule Track", where: "AIxBio Hackathon", when: "May 2026" },
   { title: "1st, ML & AI Tooling", where: "DataHacks 2026", when: "Apr 2026" },
   { title: "Top 7", where: "YC Voice Agents Hackathon", when: "May 2026" },
-  { title: "MLH Best Use of Gemini API", where: "DiamondHacks (San Diego's largest hackathon)", when: "Apr 2026" },
+  { title: "MLH Best Use of Gemini API", where: "DiamondHacks (SD's largest hackathon)", when: "Apr 2026" },
 ];
 
 const projectColors = [

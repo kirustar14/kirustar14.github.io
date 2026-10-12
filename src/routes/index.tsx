@@ -359,12 +359,13 @@ function Index() {
                 <span className="handwritten text-6xl text-black/70">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <div className="flex flex-wrap items-baseline gap-2">
-                  <div style={{ fontFamily: "Fraunces, serif" }} className="text-xl md:text-2xl font-bold tracking-tight">
-                    {a.title}
-                  </div>
-                  <span className="text-sm font-semibold text-black/35">|</span>
-                  <div className="text-sm font-semibold text-black/70">{a.where}</div>
+                <div
+                  style={{ fontFamily: "Fraunces, serif" }}
+                  className="flex flex-wrap items-baseline gap-2 text-xl md:text-2xl font-bold tracking-tight"
+                >
+                  <div>{a.title}</div>
+                  <span className="text-black/30">|</span>
+                  <div>{a.where}</div>
                 </div>
               </div>
               {a.when && <span className="chip self-start sm:self-auto">{a.when}</span>}

@@ -96,10 +96,14 @@ const experience = [
     body: "Jun 2026 - present. Genomic drug target discovery pipeline: identifies natural disease resistors in population biobanks and extracts their protective mechanisms as drug targets — computationally doing what leading competitors do through manual field expeditions. Independently rediscovered PCSK9 (monoclonal antibody inhibition) and APOB (ASO knockdown) as high-confidence drug targets using only public genomic APIs.",
   },
   {
-    role: "Co-President & Founder",
-    org: "YNot",
-    body: "Co-founded UCSD's student entrepreneurship org after a startup panel where every founder told the same recycled story. Running a weekly fall lineup from Cofounder Speed Dating to Investor for a Night, partnered with Transpose, and on Tech Week's official lineup.",
-    link: "https://ynot-website.vercel.app/",
+    role: "Host & Organizer",
+    org: "Cofounder Speed Dating",
+    body: "Hosting Cofounder Speed Dating at SF Tech Week, held at Stanford with Stanford Founders Club. Timed rounds that put founders looking for a cofounder in front of each other.",
+  },
+  {
+    role: "Problem Design Engineer",
+    org: "Widget Factory",
+    body: "Mar 2026 – Sep 2026. Designed and evaluated challenging coding puzzles that test deep software engineering fundamentals; assessed problem quality, clarity, and solvability across languages and technical domains.",
   },
   {
     role: "Founder",
@@ -115,6 +119,7 @@ const awards = [
     where: "WiML Workshop @ NeurIPS 2026",
     when: "Sep 2026",
   },
+  { title: "1st Place", where: "Triton Tank, UCSD pitch competition", when: "Oct 2026" },
   { title: "1st Place, Small Molecule Track", where: "AIxBio Hackathon, UCSD", when: "May 2026" },
   { title: "1st Place, ML & AI Tooling", where: "DataHacks 2026, UCSD", when: "Apr 2026" },
   { title: "Top 7", where: "YC Voice Agents Hackathon", when: "May 2026" },
@@ -221,7 +226,8 @@ function Index() {
           </blockquote>
 
           <p className="handwritten text-3xl md:text-4xl mt-6 text-[#c44569]">
-            new ✦ Cipher poster accepted to the WiML Workshop @ NeurIPS 2026
+            new ✦ 1st place at Triton Tank · Cipher poster accepted to the WiML Workshop @ NeurIPS
+            2026
           </p>
 
           <div className="mt-8 flex flex-wrap gap-2">

@@ -119,9 +119,9 @@ const awards = [
     where: "WiML Workshop @ NeurIPS 2026",
     when: "Sep 2026",
   },
-  { title: "1st Place", where: "Triton Tank, UCSD pitch competition", when: "Oct 2026" },
-  { title: "1st Place, Small Molecule Track", where: "AIxBio Hackathon, UCSD", when: "May 2026" },
-  { title: "1st Place, ML & AI Tooling", where: "DataHacks 2026, UCSD", when: "Apr 2026" },
+  { title: "1st", where: "Triton Tank, UCSD pitch competition", when: "Oct 2026" },
+  { title: "1st, Small Molecule Track", where: "AIxBio Hackathon", when: "May 2026" },
+  { title: "1st, ML & AI Tooling", where: "DataHacks 2026", when: "Apr 2026" },
   { title: "Top 7", where: "YC Voice Agents Hackathon", when: "May 2026" },
   { title: "MLH Best Use of Gemini API", where: "DiamondHacks (San Diego's largest hackathon)", when: "Apr 2026" },
 ];
@@ -359,11 +359,12 @@ function Index() {
                 <span className="handwritten text-6xl text-black/70">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <div>
+                <div className="flex flex-wrap items-baseline gap-2">
                   <div style={{ fontFamily: "Fraunces, serif" }} className="text-xl md:text-2xl font-bold tracking-tight">
                     {a.title}
                   </div>
-                  <div className="text-sm font-semibold text-black/70 mt-0.5">{a.where}</div>
+                  <span className="text-sm font-semibold text-black/35">|</span>
+                  <div className="text-sm font-semibold text-black/70">{a.where}</div>
                 </div>
               </div>
               {a.when && <span className="chip self-start sm:self-auto">{a.when}</span>}

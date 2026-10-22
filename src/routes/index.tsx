@@ -6,6 +6,12 @@ export const Route = createFileRoute("/")({
 
 const projects = [
   {
+    name: "Synapshot",
+    desc: "Traumatic brain injury recovery platform that builds a personalized 3D brain on a real cortex and forecasts 12 weeks of recovery with uncertainty bands. A weekly phone check-in tracks eye movement, speech, and memory on-device, and the forecast updates itself after every check-in. Built on real HCP connectivity data and the Allen Human Brain Atlas.",
+    tags: ["NumPyro", "FastAPI", "React", "MediaPipe", "Neuroimaging"],
+    github: "https://github.com/kirustar14/Synapshot",
+  },
+  {
     name: "VeggieDelhi",
     desc: "Scores 10 real Delhi street zones on live air, satellite, and street data, shortlists species that physically fit each site, then predicts cross-compatibility from published divergence times. Built at HackMIT 2026.",
     tags: ["Python", "FastAPI", "React", "Earth Engine", "Genomics"],
@@ -93,12 +99,13 @@ const experience = [
   {
     role: "Founder & CEO",
     org: "Cipher",
-    body: "Jun 2026 - present. Genomic drug target discovery pipeline: identifies natural disease resistors in population biobanks and extracts their protective mechanisms as drug targets — computationally doing what leading competitors do through manual field expeditions. Independently rediscovered PCSK9 (monoclonal antibody inhibition) and APOB (ASO knockdown) as high-confidence drug targets using only public genomic APIs.",
+    body: "Jun 2026 - present. Inverse-simulation drug discovery engine: mines population biobanks for natural disease resistors, traces their protective mutations to the genes and pathways behind the resistance, and ranks which are druggable, computationally doing what leading competitors do through manual field expeditions. Rediscovered 23 known drug targets across hypercholesterolemia, type 2 diabetes, and ADHD using only public genomic data, then built a docking pipeline that screens purchasable plant natural products against the targets and filters hits by ADMET.",
   },
   {
-    role: "Host & Organizer",
-    org: "Cofounder Speed Dating",
-    body: "Hosting Cofounder Speed Dating at SF Tech Week, held at Stanford with Stanford Founders Club. Timed rounds that put founders looking for a cofounder in front of each other.",
+    role: "Founder",
+    org: "BLEprint",
+    body: "Mar 2025 – Jun 2026. Founded a construction tech startup using embedded computer vision to detect jobsite hazards, plus an AR documentation app that shows what's behind a wall before you drill. Selected for Blackstone LaunchPad at UCSD.",
+    link: "https://github.com/kirustar14/BLEprint-mvp",
   },
   {
     role: "Problem Design Engineer",
@@ -106,10 +113,9 @@ const experience = [
     body: "Mar 2026 – Sep 2026. Designed and evaluated challenging coding puzzles that test deep software engineering fundamentals; assessed problem quality, clarity, and solvability across languages and technical domains.",
   },
   {
-    role: "Founder",
-    org: "BLEprint",
-    body: "Mar 2025 – Jun 2026. Founded a construction tech startup using embedded computer vision to detect jobsite hazards, plus an AR documentation app that shows what's behind a wall before you drill. Selected for Blackstone LaunchPad at UCSD.",
-    link: "https://github.com/kirustar14/BLEprint-mvp",
+    role: "Host & Organizer",
+    org: "Cofounder Speed Dating",
+    body: "Hosting Cofounder Speed Dating at SF Tech Week, held at Stanford with Stanford Founders Club. Timed rounds that put founders looking for a cofounder in front of each other.",
   },
 ];
 

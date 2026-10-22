@@ -80,7 +80,7 @@ const projects = [
 ];
 
 const timeline = [
-  { title: "Where it started", body: "Grew up building — LEGO, Rubik's Cube, anything with moving parts." },
+  { title: "Where it started", body: "Grew up building: LEGO, Rubik's Cube, anything with moving parts." },
   { title: "Curiosity never stops", body: "Never really stopped building, tinkering, and asking why something works." },
   { title: "B.S. Computer Engineering, in 2 years", body: "Sep 2023 – Jun 2025, UC San Diego" },
   { title: "M.S. Electrical & Computer Engineering", body: "Medical Devices & Systems track, UC San Diego, Sep 2025 – Dec 2026 (expected graduation)" },
